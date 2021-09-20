@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background-color: #353d4d;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  user-select: none; }
+
+.index__layout {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr 5rem;
+  gap: 1rem; }
+  .index__layout__header {
+    width: fit-content;
+    place-self: center;
+    margin-top: 2rem; }
+    .index__layout__header__title {
+      width: fit-content;
+      color: #ffc164;
+      font-size: 3em;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #8892b0;
+      margin-bottom: 2rem; }
+    .index__layout__header label {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index__layout__header label input {
+        height: 1.4rem;
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 1rem;
+        margin: 0 0.4rem;
+        padding: 0.2rem 0.4rem;
+        border: none;
+        border-radius: 4px;
+        background-color: whitesmoke; }
+        .index__layout__header label input:focus {
+          outline: none; }
+      .index__layout__header label .fa-search {
+        color: #ccd6f6;
+        font-size: 1.15rem;
+        cursor: pointer; }
+  .index__layout__content {
+    place-self: center;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .index__layout__content__card {
+      height: 80%;
+      width: 35rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index__layout__content__card__primary {
+        height: 100%;
+        width: 40%;
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.4); }
+        .index__layout__content__card__primary::before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(-45deg, #7f7fd5, #86a8e7, #91eae4) repeat;
+          background-size: cover;
+          opacity: 0.75;
+          border-radius: 1rem; }
+      .index__layout__content__card__info {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        font-weight: bold;
+        color: #1a3d72;
+        display: grid;
+        grid-template-rows: 1.7rem 1fr; }
+        .index__layout__content__card__info__top__actual-day {
+          font-size: 1.4em; }
+        .index__layout__content__card__info__top__full-date {
+          font-size: 0.9em; }
+        .index__layout__content__card__info__bottom__location {
+          font-size: 0.8em; }
+        .index__layout__content__card__info__bottom__temperature {
+          font-size: 2.25em; }
+        .index__layout__content__card__info__bottom__type {
+          font-size: 1.25em; }
+        .index__layout__content__card__info__bottom__icon {
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+      .index__layout__content__card__secondary {
+        height: 80%;
+        width: 60%;
+        position: relative;
+        background-color: #22262c;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 1rem 2rem;
+        z-index: 1;
+        color: #F7F6F4; }
+        .index__layout__content__card__secondary__description, .index__layout__content__card__secondary__humidity, .index__layout__content__card__secondary__wind, .index__layout__content__card__secondary__temps {
+          margin-bottom: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .index__layout__content__card__secondary__description h4, .index__layout__content__card__secondary__humidity h4, .index__layout__content__card__secondary__wind h4, .index__layout__content__card__secondary__temps h4 {
+            font-weight: 800; }
+        .index__layout__content__card__secondary__temps {
+          height: 5rem;
+          width: 17rem;
+          position: absolute;
+          bottom: 0; }
+  .index__layout__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .index__layout__footer p {
+      color: #ffc164; }
+    .index__layout__footer div {
+      width: 10rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .index__layout__footer div i {
+        font-size: 1.4em;
+        color: #8892b0;
+        transition: all 0.3s ease-in-out; }
+        .index__layout__footer div i:hover {
+          color: #ffc164; }
