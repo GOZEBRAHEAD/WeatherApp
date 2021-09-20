@@ -22,11 +22,11 @@ function changeCardBackground(type) {
 
         case "Clear":
         case "Sunny":
-            cardBackground.style.background = "url(/src/img/beach.jpeg)";
+            cardBackground.style.background = "url(./img/beach.jpeg)";
             break;
 
        default:
-            cardBackground.style.background = "url(/src/img/coffee.jpeg)";
+            cardBackground.style.background = "url(./img/coffee.jpeg)";
             break;
     }
 
